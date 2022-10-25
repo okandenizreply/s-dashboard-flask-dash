@@ -1,3 +1,3 @@
-# Dash on Flask
+# s-dashboard
 
-this repository demonstrates how Dash can be integrated into flask.
+Sustainability dashboard through flask & dash integration.

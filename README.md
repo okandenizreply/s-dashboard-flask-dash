@@ -10,9 +10,10 @@ pip install flask_bootstrap <br />
 pip install flask_login <br />
 pip install flask-wtf <br />
 pip install flask_sqlalchemy <br />
-pip install dash <br />
 pip install pandas <br />
 pip install email_validator <br />
+pip install flask_migrate <br />
+pip install dash <br />
 
 
 flask run

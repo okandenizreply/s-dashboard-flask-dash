@@ -2,6 +2,8 @@
 
 Sustainability CoP dashboard through flask & dash integration.
 
+Reqs: pip, pipenv <br />
+
 cd s-dashboard <br />
 pipenv shell <br />
 

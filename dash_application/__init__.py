@@ -12,7 +12,7 @@ df = pd.DataFrame(
         "Month": ['January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December'],
-        "A/C Usage (kWh/m²)": [36,44,34,36,41,33,38,43,36,47,46,40,40,48,45,42,37,40,43,44,30,36,37,47],
+        "A/C Usage (kWh)": [36,44,34,36,41,33,38,43,36,47,46,40,40,48,45,42,37,40,43,44,30,36,37,47],
         "Type": ["Heating","Heating","Heating","Heating","Heating","Heating","Heating","Heating","Heating","Heating","Heating","Heating","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling","Cooling"],
     }
 )
@@ -28,7 +28,7 @@ def create_dash_application(flask_app):
             ),
             dcc.Graph(
                 id="example-graph",
-                figure=px.bar(df, x="Month", y="A/C Usage (kWh/m²)", color="Type", barmode="group"),
+                figure=px.bar(df, x="Month", y="A/C Usage (kWh)", color="Type", barmode="group"),
             ),
         ]
     )
